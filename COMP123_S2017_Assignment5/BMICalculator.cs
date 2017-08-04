@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMP123_S2017_Assignment5
 {
-    public partial class BMICaculator : Form
+    public partial class BMICalculator : Form
     {
-        public BMICaculator()
+        public BMICalculator()
         {
             InitializeComponent();
         }
@@ -21,5 +21,7 @@ namespace COMP123_S2017_Assignment5
         {
 
         }
+
+       
     }
 }
