@@ -52,8 +52,14 @@
             this.ZeroButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
             this.CalculateButton = new System.Windows.Forms.Button();
+            this.ResultTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.BMIlabel = new System.Windows.Forms.Label();
+            this.BMIResultTextBox = new System.Windows.Forms.TextBox();
+            this.RangeLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.StandardMetricTableLayoutPanel.SuspendLayout();
             this.CalculationTableLayoutPanel.SuspendLayout();
+            this.ResultTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // StandardMetricTableLayoutPanel
@@ -322,11 +328,64 @@
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
             // 
+            // ResultTableLayoutPanel
+            // 
+            this.ResultTableLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ResultTableLayoutPanel.ColumnCount = 1;
+            this.ResultTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ResultTableLayoutPanel.Controls.Add(this.BMIResultTextBox, 0, 1);
+            this.ResultTableLayoutPanel.Controls.Add(this.RangeLabel, 0, 2);
+            this.ResultTableLayoutPanel.Controls.Add(this.textBox1, 0, 3);
+            this.ResultTableLayoutPanel.Location = new System.Drawing.Point(331, 74);
+            this.ResultTableLayoutPanel.Name = "ResultTableLayoutPanel";
+            this.ResultTableLayoutPanel.RowCount = 4;
+            this.ResultTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ResultTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ResultTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ResultTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ResultTableLayoutPanel.Size = new System.Drawing.Size(289, 163);
+            this.ResultTableLayoutPanel.TabIndex = 3;
+            // 
+            // BMIlabel
+            // 
+            this.BMIlabel.AutoSize = true;
+            this.BMIlabel.Location = new System.Drawing.Point(420, 80);
+            this.BMIlabel.Name = "BMIlabel";
+            this.BMIlabel.Size = new System.Drawing.Size(112, 29);
+            this.BMIlabel.TabIndex = 0;
+            this.BMIlabel.Text = "Your BMI";
+            // 
+            // BMIResultTextBox
+            // 
+            this.BMIResultTextBox.Location = new System.Drawing.Point(3, 43);
+            this.BMIResultTextBox.Name = "BMIResultTextBox";
+            this.BMIResultTextBox.Size = new System.Drawing.Size(283, 35);
+            this.BMIResultTextBox.TabIndex = 0;
+            // 
+            // RangeLabel
+            // 
+            this.RangeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RangeLabel.AutoSize = true;
+            this.RangeLabel.Location = new System.Drawing.Point(102, 85);
+            this.RangeLabel.Name = "RangeLabel";
+            this.RangeLabel.Size = new System.Drawing.Size(84, 29);
+            this.RangeLabel.TabIndex = 4;
+            this.RangeLabel.Text = "Range";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(3, 123);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(283, 35);
+            this.textBox1.TabIndex = 5;
+            // 
             // BMICalculator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(710, 533);
+            this.Controls.Add(this.BMIlabel);
+            this.Controls.Add(this.ResultTableLayoutPanel);
             this.Controls.Add(this.CalculationTableLayoutPanel);
             this.Controls.Add(this.StandardMetricTableLayoutPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,7 +398,10 @@
             this.StandardMetricTableLayoutPanel.PerformLayout();
             this.CalculationTableLayoutPanel.ResumeLayout(false);
             this.CalculationTableLayoutPanel.PerformLayout();
+            this.ResultTableLayoutPanel.ResumeLayout(false);
+            this.ResultTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -368,6 +430,11 @@
         private System.Windows.Forms.Button NineButton;
         private System.Windows.Forms.Button EightButton;
         private System.Windows.Forms.Button SevenButton;
+        private System.Windows.Forms.TableLayoutPanel ResultTableLayoutPanel;
+        private System.Windows.Forms.TextBox BMIResultTextBox;
+        private System.Windows.Forms.Label RangeLabel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label BMIlabel;
     }
 }
 
